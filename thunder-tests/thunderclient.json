@@ -40,5 +40,57 @@
       ]
     },
     "tests": []
+  },
+  {
+    "_id": "671e1e90-e790-478d-add0-a503f0558546",
+    "colId": "1f1e8af7-3ba9-4dfc-b99f-d4ef35d4f389",
+    "containerId": "",
+    "name": "Get Task by ID",
+    "url": "http://localhost:3000/api/tasks/f5e66fae-5361-4716-9767-b5b5d83ff307",
+    "method": "GET",
+    "sortNum": 30000,
+    "created": "2022-07-19T03:25:12.298Z",
+    "modified": "2022-07-19T03:30:52.750Z",
+    "headers": [],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "78298858-bf39-4a2b-be16-f1c6c751c237",
+    "colId": "1f1e8af7-3ba9-4dfc-b99f-d4ef35d4f389",
+    "containerId": "",
+    "name": "Delete Task by ID",
+    "url": "http://localhost:3000/api/tasks/9176b7df-85f9-4920-9c45-e0c4e893af75",
+    "method": "DELETE",
+    "sortNum": 40000,
+    "created": "2022-07-19T03:30:21.327Z",
+    "modified": "2022-07-19T03:34:01.933Z",
+    "headers": [],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "4ab24714-a717-4cd8-8fb4-31da6683acbf",
+    "colId": "1f1e8af7-3ba9-4dfc-b99f-d4ef35d4f389",
+    "containerId": "",
+    "name": "Update Task by ID",
+    "url": "http://localhost:3000/api/tasks/b0779c19-236a-4c26-9ad5-005a1bac93ed/status",
+    "method": "PATCH",
+    "sortNum": 35000,
+    "created": "2022-07-19T03:39:14.999Z",
+    "modified": "2022-07-19T03:40:33.592Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "formencoded",
+      "raw": "",
+      "form": [
+        {
+          "name": "status",
+          "value": "IN_PROGRESS"
+        }
+      ]
+    },
+    "tests": []
   }
 ]

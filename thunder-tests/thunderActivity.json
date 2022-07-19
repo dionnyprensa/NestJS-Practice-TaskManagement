@@ -8,7 +8,7 @@
     "method": "GET",
     "sortNum": 0,
     "created": "2022-07-18T03:33:21.467Z",
-    "modified": "2022-07-18T03:33:23.540Z",
+    "modified": "2022-07-19T03:34:22.522Z",
     "headers": [],
     "params": [],
     "tests": []
@@ -22,7 +22,7 @@
     "method": "POST",
     "sortNum": 0,
     "created": "2022-07-18T03:38:21.408Z",
-    "modified": "2022-07-18T03:38:29.283Z",
+    "modified": "2022-07-19T03:40:22.508Z",
     "headers": [],
     "params": [],
     "body": {
@@ -36,6 +36,184 @@
         {
           "name": "description",
           "value": "In order to start Pitafoo project again"
+        }
+      ]
+    },
+    "tests": []
+  },
+  {
+    "_id": "39207e31-09dd-4199-ab4f-c42330a0d88a",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://localhost:3000/api/tasks/?id=d",
+    "url": "http://localhost:3000/api/tasks/?id=d",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2022-07-19T03:24:22.241Z",
+    "modified": "2022-07-19T03:24:22.249Z",
+    "headers": [],
+    "params": [
+      {
+        "name": "id",
+        "value": "d",
+        "isPath": false
+      }
+    ],
+    "tests": []
+  },
+  {
+    "_id": "17ca215b-b367-47ec-a3ab-6d0f8599470a",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://localhost:3000/api/tasks/?id=0d2c7806-891d-4b9b-a653-db911e76b6c0",
+    "url": "http://localhost:3000/api/tasks/?id=0d2c7806-891d-4b9b-a653-db911e76b6c0",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2022-07-19T03:24:29.016Z",
+    "modified": "2022-07-19T03:24:42.614Z",
+    "headers": [],
+    "params": [
+      {
+        "name": "id",
+        "value": "0d2c7806-891d-4b9b-a653-db911e76b6c0",
+        "isPath": false
+      }
+    ],
+    "tests": []
+  },
+  {
+    "_id": "4b89152b-b06a-4994-aaeb-8335f09f7187",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://localhost:3000/api/tasks?id=0d2c7806-891d-4b9b-a653-db911e76b6c0",
+    "url": "http://localhost:3000/api/tasks?id=0d2c7806-891d-4b9b-a653-db911e76b6c0",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2022-07-19T03:24:49.963Z",
+    "modified": "2022-07-19T03:26:00.059Z",
+    "headers": [],
+    "params": [
+      {
+        "name": "id",
+        "value": "0d2c7806-891d-4b9b-a653-db911e76b6c0",
+        "isPath": false
+      }
+    ],
+    "tests": []
+  },
+  {
+    "_id": "a52137dd-8eb6-4679-b5b2-97a8ebcebc87",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://localhost:3000/api/tasks/0d2c7806-891d-4b9b-a653-db911e76b6c0",
+    "url": "http://localhost:3000/api/tasks/0d2c7806-891d-4b9b-a653-db911e76b6c0",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2022-07-19T03:26:23.201Z",
+    "modified": "2022-07-19T03:26:23.212Z",
+    "headers": [],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "496d2bde-596d-4938-ac85-01fdf5096838",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://localhost:3000/api/tasks/499c8070-388e-44dd-9289-e9a1327b1df6",
+    "url": "http://localhost:3000/api/tasks/499c8070-388e-44dd-9289-e9a1327b1df6",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2022-07-19T03:26:37.183Z",
+    "modified": "2022-07-19T03:26:37.190Z",
+    "headers": [],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "abff5f99-4cb9-45a0-8822-4c93192f8734",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://localhost:3000/api/tasks/f5e66fae-5361-4716-9767-b5b5d83ff307",
+    "url": "http://localhost:3000/api/tasks/f5e66fae-5361-4716-9767-b5b5d83ff307",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2022-07-19T03:30:52.743Z",
+    "modified": "2022-07-19T03:30:52.752Z",
+    "headers": [],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "0e242f56-81cd-4bee-8307-082de91881ce",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://localhost:3000/api/tasks/f5e66fae-5361-4716-9767-b5b5d83ff307",
+    "url": "http://localhost:3000/api/tasks/f5e66fae-5361-4716-9767-b5b5d83ff307",
+    "method": "DELETE",
+    "sortNum": 0,
+    "created": "2022-07-19T03:31:07.284Z",
+    "modified": "2022-07-19T03:32:04.426Z",
+    "headers": [],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "0ede0107-3562-4681-b7a4-97528efb8181",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://localhost:3000/api/tasks/9176b7df-85f9-4920-9c45-e0c4e893af75",
+    "url": "http://localhost:3000/api/tasks/9176b7df-85f9-4920-9c45-e0c4e893af75",
+    "method": "DELETE",
+    "sortNum": 0,
+    "created": "2022-07-19T03:34:01.926Z",
+    "modified": "2022-07-19T03:34:01.938Z",
+    "headers": [],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "7743952b-fbec-46b4-a804-d39b7c671110",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://localhost:3000/api/tasks/f5e66fae-5361-4716-9767-b5b5d83ff307/status",
+    "url": "http://localhost:3000/api/tasks/f5e66fae-5361-4716-9767-b5b5d83ff307/status",
+    "method": "PATCH",
+    "sortNum": 0,
+    "created": "2022-07-19T03:39:52.489Z",
+    "modified": "2022-07-19T03:39:52.515Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "formencoded",
+      "raw": "",
+      "form": [
+        {
+          "name": "status",
+          "value": "IN_PROGRESS"
+        }
+      ]
+    },
+    "tests": []
+  },
+  {
+    "_id": "bcd6d2fd-b0bd-4f1d-b6b7-546fb4f33611",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://localhost:3000/api/tasks/b0779c19-236a-4c26-9ad5-005a1bac93ed/status",
+    "url": "http://localhost:3000/api/tasks/b0779c19-236a-4c26-9ad5-005a1bac93ed/status",
+    "method": "PATCH",
+    "sortNum": 0,
+    "created": "2022-07-19T03:40:33.585Z",
+    "modified": "2022-07-19T03:40:35.709Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "formencoded",
+      "raw": "",
+      "form": [
+        {
+          "name": "status",
+          "value": "IN_PROGRESS"
         }
       ]
     },
