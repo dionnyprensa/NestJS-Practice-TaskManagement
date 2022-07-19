@@ -8,22 +8,9 @@
     "method": "GET",
     "sortNum": 0,
     "created": "2022-07-18T03:33:21.467Z",
-    "modified": "2022-07-19T04:27:39.641Z",
+    "modified": "2022-07-19T06:40:11.555Z",
     "headers": [],
-    "params": [
-      {
-        "name": "search",
-        "value": "tas",
-        "isDisabled": true,
-        "isPath": false
-      },
-      {
-        "name": "status",
-        "value": "OPEN",
-        "isDisabled": true,
-        "isPath": false
-      }
-    ],
+    "params": [],
     "tests": []
   },
   {
@@ -35,7 +22,7 @@
     "method": "POST",
     "sortNum": 0,
     "created": "2022-07-18T03:38:21.408Z",
-    "modified": "2022-07-19T04:27:15.201Z",
+    "modified": "2022-07-19T06:39:02.683Z",
     "headers": [],
     "params": [],
     "body": {
@@ -44,7 +31,7 @@
       "form": [
         {
           "name": "title",
-          "value": "Task 1"
+          "value": "Task 4"
         },
         {
           "name": "description",
@@ -369,12 +356,12 @@
     "method": "GET",
     "sortNum": 0,
     "created": "2022-07-19T03:58:07.962Z",
-    "modified": "2022-07-19T03:58:07.971Z",
+    "modified": "2022-07-19T06:41:45.237Z",
     "headers": [],
     "params": [
       {
         "name": "search",
-        "value": "Tarea",
+        "value": "3",
         "isDisabled": true,
         "isPath": false
       },
@@ -499,7 +486,7 @@
     "method": "GET",
     "sortNum": 0,
     "created": "2022-07-19T04:17:53.664Z",
-    "modified": "2022-07-19T04:17:53.673Z",
+    "modified": "2022-07-19T05:55:20.394Z",
     "headers": [],
     "params": [],
     "tests": []
@@ -537,7 +524,7 @@
     "method": "GET",
     "sortNum": 0,
     "created": "2022-07-19T04:27:25.156Z",
-    "modified": "2022-07-19T04:27:25.167Z",
+    "modified": "2022-07-19T06:41:24.336Z",
     "headers": [],
     "params": [
       {
@@ -604,6 +591,84 @@
         "isPath": false
       }
     ],
+    "tests": []
+  },
+  {
+    "_id": "f0bcd72a-82ed-4b88-8bfe-54cf41b87fff",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://localhost:3000/api/tasks/11",
+    "url": "http://localhost:3000/api/tasks/11",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2022-07-19T05:55:29.924Z",
+    "modified": "2022-07-19T05:55:29.935Z",
+    "headers": [],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "cab9d302-dec8-432b-b66e-c046d6187745",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://localhost:3000/api/tasks/1",
+    "url": "http://localhost:3000/api/tasks/1",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2022-07-19T05:59:02.034Z",
+    "modified": "2022-07-19T06:03:06.094Z",
+    "headers": [],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "b811e0fd-027e-457e-afc3-cb68ecfcb192",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://localhost:3000/api/tasks?search=3",
+    "url": "http://localhost:3000/api/tasks?search=3",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2022-07-19T06:40:22.632Z",
+    "modified": "2022-07-19T06:41:27.721Z",
+    "headers": [],
+    "params": [
+      {
+        "name": "search",
+        "value": "3",
+        "isPath": false
+      },
+      {
+        "name": "status",
+        "value": "OPEN",
+        "isDisabled": true,
+        "isPath": false
+      }
+    ],
+    "tests": []
+  },
+  {
+    "_id": "35c996bf-2ff0-4cf0-8a45-db62a8334685",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://localhost:3000/api/tasks/1/status",
+    "url": "http://localhost:3000/api/tasks/1/status",
+    "method": "PATCH",
+    "sortNum": 0,
+    "created": "2022-07-19T06:41:40.633Z",
+    "modified": "2022-07-19T06:41:40.725Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "formencoded",
+      "raw": "",
+      "form": [
+        {
+          "name": "status",
+          "value": "IN_PROGRESS"
+        }
+      ]
+    },
     "tests": []
   }
 ]
