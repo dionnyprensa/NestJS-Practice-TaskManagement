@@ -8,7 +8,7 @@
     "method": "GET",
     "sortNum": 0,
     "created": "2022-07-18T03:33:21.467Z",
-    "modified": "2022-07-19T03:34:22.522Z",
+    "modified": "2022-07-19T04:00:25.631Z",
     "headers": [],
     "params": [],
     "tests": []
@@ -22,7 +22,7 @@
     "method": "POST",
     "sortNum": 0,
     "created": "2022-07-18T03:38:21.408Z",
-    "modified": "2022-07-19T03:40:22.508Z",
+    "modified": "2022-07-19T04:00:47.463Z",
     "headers": [],
     "params": [],
     "body": {
@@ -31,11 +31,11 @@
       "form": [
         {
           "name": "title",
-          "value": "Finish this course"
+          "value": "Task 2"
         },
         {
           "name": "description",
-          "value": "In order to start Pitafoo project again"
+          "value": "Task's description"
         }
       ]
     },
@@ -217,6 +217,264 @@
         }
       ]
     },
+    "tests": []
+  },
+  {
+    "_id": "1178a9d3-66f0-4166-8939-c9739aa64c09",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://localhost:3000/api/tasks?search=Tarea",
+    "url": "http://localhost:3000/api/tasks?search=Tarea",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2022-07-19T03:56:07.303Z",
+    "modified": "2022-07-19T03:58:11.517Z",
+    "headers": [],
+    "params": [
+      {
+        "name": "search",
+        "value": "Tarea",
+        "isPath": false
+      },
+      {
+        "name": "status",
+        "value": "OPEN",
+        "isDisabled": true,
+        "isPath": false
+      }
+    ],
+    "tests": []
+  },
+  {
+    "_id": "72e4cd50-5f49-408a-8394-c8149e4202d8",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://localhost:3000/api/tasks?search=t",
+    "url": "http://localhost:3000/api/tasks?search=t",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2022-07-19T03:57:04.578Z",
+    "modified": "2022-07-19T04:00:50.021Z",
+    "headers": [],
+    "params": [
+      {
+        "name": "search",
+        "value": "t",
+        "isPath": false
+      },
+      {
+        "name": "status",
+        "value": "OPEN",
+        "isDisabled": true,
+        "isPath": false
+      }
+    ],
+    "tests": []
+  },
+  {
+    "_id": "b8122a48-3bbf-4e7f-89b3-3ddf58617889",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://localhost:3000/api/tasks?search=Task",
+    "url": "http://localhost:3000/api/tasks?search=Task",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2022-07-19T03:57:10.566Z",
+    "modified": "2022-07-19T04:00:16.624Z",
+    "headers": [],
+    "params": [
+      {
+        "name": "search",
+        "value": "Task",
+        "isPath": false
+      },
+      {
+        "name": "status",
+        "value": "OPEN",
+        "isDisabled": true,
+        "isPath": false
+      }
+    ],
+    "tests": []
+  },
+  {
+    "_id": "46d9d0f8-f404-471f-bfe1-d8ef96f3addd",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://localhost:3000/api/tasks?search=Tarea&status=New",
+    "url": "http://localhost:3000/api/tasks?search=Tarea&status=New",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2022-07-19T03:57:52.209Z",
+    "modified": "2022-07-19T03:57:52.218Z",
+    "headers": [],
+    "params": [
+      {
+        "name": "search",
+        "value": "Tarea",
+        "isPath": false
+      },
+      {
+        "name": "status",
+        "value": "New",
+        "isPath": false
+      }
+    ],
+    "tests": []
+  },
+  {
+    "_id": "186f973d-bd21-40d2-89e0-bded64d025bd",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://localhost:3000/api/tasks?search=Tarea&status=OPEN",
+    "url": "http://localhost:3000/api/tasks?search=Tarea&status=OPEN",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2022-07-19T03:58:05.744Z",
+    "modified": "2022-07-19T03:58:05.752Z",
+    "headers": [],
+    "params": [
+      {
+        "name": "search",
+        "value": "Tarea",
+        "isPath": false
+      },
+      {
+        "name": "status",
+        "value": "OPEN",
+        "isPath": false
+      }
+    ],
+    "tests": []
+  },
+  {
+    "_id": "ef5a7e64-70fe-481d-9463-548ff93f2ebe",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://localhost:3000/api/tasks?status=OPEN",
+    "url": "http://localhost:3000/api/tasks?status=OPEN",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2022-07-19T03:58:07.962Z",
+    "modified": "2022-07-19T03:58:07.971Z",
+    "headers": [],
+    "params": [
+      {
+        "name": "search",
+        "value": "Tarea",
+        "isDisabled": true,
+        "isPath": false
+      },
+      {
+        "name": "status",
+        "value": "OPEN",
+        "isPath": false
+      }
+    ],
+    "tests": []
+  },
+  {
+    "_id": "690ff44f-fa7e-4868-8c28-83617419baac",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://localhost:3000/api/tasks?search=tarea",
+    "url": "http://localhost:3000/api/tasks?search=tarea",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2022-07-19T04:00:12.477Z",
+    "modified": "2022-07-19T04:01:01.115Z",
+    "headers": [],
+    "params": [
+      {
+        "name": "search",
+        "value": "tarea",
+        "isPath": false
+      },
+      {
+        "name": "status",
+        "value": "OPEN",
+        "isDisabled": true,
+        "isPath": false
+      }
+    ],
+    "tests": []
+  },
+  {
+    "_id": "cffb28cc-d711-46bc-a65e-5cddb54b1b44",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://localhost:3000/api/tasks?search=T",
+    "url": "http://localhost:3000/api/tasks?search=T",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2022-07-19T04:00:19.782Z",
+    "modified": "2022-07-19T04:00:19.788Z",
+    "headers": [],
+    "params": [
+      {
+        "name": "search",
+        "value": "T",
+        "isPath": false
+      },
+      {
+        "name": "status",
+        "value": "OPEN",
+        "isDisabled": true,
+        "isPath": false
+      }
+    ],
+    "tests": []
+  },
+  {
+    "_id": "f362e0ed-3911-432f-bb29-fd0504f4bc43",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://localhost:3000/api/tasks?search=task",
+    "url": "http://localhost:3000/api/tasks?search=task",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2022-07-19T04:00:53.980Z",
+    "modified": "2022-07-19T04:00:53.989Z",
+    "headers": [],
+    "params": [
+      {
+        "name": "search",
+        "value": "task",
+        "isPath": false
+      },
+      {
+        "name": "status",
+        "value": "OPEN",
+        "isDisabled": true,
+        "isPath": false
+      }
+    ],
+    "tests": []
+  },
+  {
+    "_id": "8c21c52f-4bee-48de-96aa-9d3e858a6b27",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://localhost:3000/api/tasks?search=task 1",
+    "url": "http://localhost:3000/api/tasks?search=task 1",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2022-07-19T04:01:13.356Z",
+    "modified": "2022-07-19T04:01:13.367Z",
+    "headers": [],
+    "params": [
+      {
+        "name": "search",
+        "value": "task 1",
+        "isPath": false
+      },
+      {
+        "name": "status",
+        "value": "OPEN",
+        "isDisabled": true,
+        "isPath": false
+      }
+    ],
     "tests": []
   }
 ]

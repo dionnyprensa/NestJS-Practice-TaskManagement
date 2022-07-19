@@ -22,7 +22,7 @@
     "method": "POST",
     "sortNum": 20000,
     "created": "2022-07-18T03:38:41.245Z",
-    "modified": "2022-07-18T03:38:41.245Z",
+    "modified": "2022-07-19T04:00:47.461Z",
     "headers": [],
     "params": [],
     "body": {
@@ -31,11 +31,11 @@
       "form": [
         {
           "name": "title",
-          "value": "Finish this course"
+          "value": "Task 2"
         },
         {
           "name": "description",
-          "value": "In order to start Pitafoo project again"
+          "value": "Task's description"
         }
       ]
     },
@@ -91,6 +91,32 @@
         }
       ]
     },
+    "tests": []
+  },
+  {
+    "_id": "bc763b35-044a-4425-8e57-edf90c731ec1",
+    "colId": "1f1e8af7-3ba9-4dfc-b99f-d4ef35d4f389",
+    "containerId": "",
+    "name": "Get Tasks By Filter",
+    "url": "http://localhost:3000/api/tasks?search=task 1",
+    "method": "GET",
+    "sortNum": 15000,
+    "created": "2022-07-19T03:55:30.721Z",
+    "modified": "2022-07-19T04:01:13.365Z",
+    "headers": [],
+    "params": [
+      {
+        "name": "search",
+        "value": "task 1",
+        "isPath": false
+      },
+      {
+        "name": "status",
+        "value": "OPEN",
+        "isDisabled": true,
+        "isPath": false
+      }
+    ],
     "tests": []
   }
 ]
