@@ -1,8 +1,9 @@
-import { Injectable } from '@nestjs/common';
+import { Injectable, NotFoundException } from '@nestjs/common';
 import { Task, TaskStatus } from './task.model';
 import { v4 as uuid } from "uuid"
-import { CreateTaskDTO } from './create-task.dto';
-import { GetTasksFilterDTO } from './get-tasks-filter.dto';
+import { CreateTaskDTO } from './dtos/create-task.dto';
+import { GetTasksFilterDTO } from './dtos/get-tasks-filter.dto';
+import { UpdateTaskStatusDTO } from './dtos/update-task-status';
 
 @Injectable()
 export class TasksService {
@@ -28,7 +29,11 @@ export class TasksService {
   }
 
   getByID(id: string): Task {
-    return this.tasks.find(task => task.id === id);
+    const _task: Task = this.tasks.find(task => task.id === id);
+
+    if (!_task) throw new NotFoundException(`Task with the ID ${id} not found`);
+
+    return _task;
   }
 
   create(createTaskDTO: CreateTaskDTO): Task {
@@ -47,13 +52,19 @@ export class TasksService {
   }
 
   deleteByID(id: string): void {
+    const taskID = this.tasks.findIndex((task) => task.id === id);
+
+    if (taskID < 0) throw new NotFoundException(`Task with the ID ${id} not found`);
+
     this.tasks = this.tasks.filter((task) => task.id !== id);
   }
 
-  updateByID(id: string, status: TaskStatus): Task {
+  updateByID(id: string, updateTaskStatusDTO: UpdateTaskStatusDTO): Task {
     const taskID = this.tasks.findIndex((task) => task.id === id);
 
-    this.tasks[taskID].status = status;
+    if (taskID < 0) throw new NotFoundException(`Task with the ID ${id} not found`);
+
+    this.tasks[taskID].status = updateTaskStatusDTO.status;
 
     return this.tasks[taskID];
   }

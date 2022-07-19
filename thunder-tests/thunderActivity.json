@@ -8,9 +8,22 @@
     "method": "GET",
     "sortNum": 0,
     "created": "2022-07-18T03:33:21.467Z",
-    "modified": "2022-07-19T04:00:25.631Z",
+    "modified": "2022-07-19T04:27:39.641Z",
     "headers": [],
-    "params": [],
+    "params": [
+      {
+        "name": "search",
+        "value": "tas",
+        "isDisabled": true,
+        "isPath": false
+      },
+      {
+        "name": "status",
+        "value": "OPEN",
+        "isDisabled": true,
+        "isPath": false
+      }
+    ],
     "tests": []
   },
   {
@@ -22,7 +35,7 @@
     "method": "POST",
     "sortNum": 0,
     "created": "2022-07-18T03:38:21.408Z",
-    "modified": "2022-07-19T04:00:47.463Z",
+    "modified": "2022-07-19T04:27:15.201Z",
     "headers": [],
     "params": [],
     "body": {
@@ -31,7 +44,7 @@
       "form": [
         {
           "name": "title",
-          "value": "Task 2"
+          "value": "Task 1"
         },
         {
           "name": "description",
@@ -138,7 +151,7 @@
     "method": "GET",
     "sortNum": 0,
     "created": "2022-07-19T03:30:52.743Z",
-    "modified": "2022-07-19T03:30:52.752Z",
+    "modified": "2022-07-19T04:17:46.422Z",
     "headers": [],
     "params": [],
     "tests": []
@@ -166,7 +179,7 @@
     "method": "DELETE",
     "sortNum": 0,
     "created": "2022-07-19T03:34:01.926Z",
-    "modified": "2022-07-19T03:34:01.938Z",
+    "modified": "2022-07-19T04:20:28.434Z",
     "headers": [],
     "params": [],
     "tests": []
@@ -204,7 +217,7 @@
     "method": "PATCH",
     "sortNum": 0,
     "created": "2022-07-19T03:40:33.585Z",
-    "modified": "2022-07-19T03:40:35.709Z",
+    "modified": "2022-07-19T04:24:35.927Z",
     "headers": [],
     "params": [],
     "body": {
@@ -460,12 +473,128 @@
     "method": "GET",
     "sortNum": 0,
     "created": "2022-07-19T04:01:13.356Z",
-    "modified": "2022-07-19T04:01:13.367Z",
+    "modified": "2022-07-19T04:27:18.459Z",
     "headers": [],
     "params": [
       {
         "name": "search",
         "value": "task 1",
+        "isPath": false
+      },
+      {
+        "name": "status",
+        "value": "OPEN",
+        "isDisabled": true,
+        "isPath": false
+      }
+    ],
+    "tests": []
+  },
+  {
+    "_id": "383003b3-8de6-40fe-97d9-16bdd5280038",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://localhost:3000/api/tasks/11f4c4f9-6aaa-4e57-9ea6-f284ccd27ffb",
+    "url": "http://localhost:3000/api/tasks/11f4c4f9-6aaa-4e57-9ea6-f284ccd27ffb",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2022-07-19T04:17:53.664Z",
+    "modified": "2022-07-19T04:17:53.673Z",
+    "headers": [],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "e8cc53b8-42e1-4e12-8687-8ea16db647df",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://localhost:3000/api/tasks/a545128b-bf79-4623-9a38-e7353445e544/status",
+    "url": "http://localhost:3000/api/tasks/a545128b-bf79-4623-9a38-e7353445e544/status",
+    "method": "PATCH",
+    "sortNum": 0,
+    "created": "2022-07-19T04:24:48.635Z",
+    "modified": "2022-07-19T04:24:56.836Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "formencoded",
+      "raw": "",
+      "form": [
+        {
+          "name": "status",
+          "value": "IN_PROGRESS"
+        }
+      ]
+    },
+    "tests": []
+  },
+  {
+    "_id": "48075a87-ae2b-466b-a117-33848517b604",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://localhost:3000/api/tasks?search=1",
+    "url": "http://localhost:3000/api/tasks?search=1",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2022-07-19T04:27:25.156Z",
+    "modified": "2022-07-19T04:27:25.167Z",
+    "headers": [],
+    "params": [
+      {
+        "name": "search",
+        "value": "1",
+        "isPath": false
+      },
+      {
+        "name": "status",
+        "value": "OPEN",
+        "isDisabled": true,
+        "isPath": false
+      }
+    ],
+    "tests": []
+  },
+  {
+    "_id": "83d58e93-f91e-45bc-9cc8-5a86eced04b2",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://localhost:3000/api/tasks?search=2",
+    "url": "http://localhost:3000/api/tasks?search=2",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2022-07-19T04:27:27.929Z",
+    "modified": "2022-07-19T04:27:27.941Z",
+    "headers": [],
+    "params": [
+      {
+        "name": "search",
+        "value": "2",
+        "isPath": false
+      },
+      {
+        "name": "status",
+        "value": "OPEN",
+        "isDisabled": true,
+        "isPath": false
+      }
+    ],
+    "tests": []
+  },
+  {
+    "_id": "41ede0ee-8be8-41ce-b3f7-eb022bc17906",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://localhost:3000/api/tasks?search=tas",
+    "url": "http://localhost:3000/api/tasks?search=tas",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2022-07-19T04:27:34.060Z",
+    "modified": "2022-07-19T04:27:42.015Z",
+    "headers": [],
+    "params": [
+      {
+        "name": "search",
+        "value": "tas",
         "isPath": false
       },
       {
