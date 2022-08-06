@@ -2,27 +2,32 @@
   {
     "_id": "eeda54a0-7c9e-4f62-8eef-e5bdb3c12c47",
     "colId": "1f1e8af7-3ba9-4dfc-b99f-d4ef35d4f389",
-    "containerId": "",
+    "containerId": "f801e786-4306-4af9-85f9-8203f55fcb23",
     "name": "Get Tasks",
     "url": "http://localhost:3000/api/tasks",
     "method": "GET",
     "sortNum": 10000,
     "created": "2022-07-18T03:36:56.385Z",
-    "modified": "2022-07-18T03:36:56.385Z",
+    "modified": "2022-07-23T23:58:31.986Z",
     "headers": [],
     "params": [],
+    "auth": {
+      "type": "bearer",
+      "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRlc3QxIiwiaWF0IjoxNjU4NjIwNjk4LCJleHAiOjE2NTg2MjQyOTh9.KyWRwOoWZDky4WQOYHTiJymdAj_ctGL7VRvcrXAx8LU",
+      "bearerPrefix": "Bearer "
+    },
     "tests": []
   },
   {
     "_id": "2108d003-4089-4f40-8515-01191fae6901",
     "colId": "1f1e8af7-3ba9-4dfc-b99f-d4ef35d4f389",
-    "containerId": "",
+    "containerId": "f801e786-4306-4af9-85f9-8203f55fcb23",
     "name": "Create Task",
     "url": "http://localhost:3000/api/tasks",
     "method": "POST",
-    "sortNum": 20000,
+    "sortNum": 30000,
     "created": "2022-07-18T03:38:41.245Z",
-    "modified": "2022-07-19T06:39:02.681Z",
+    "modified": "2022-08-06T16:33:10.230Z",
     "headers": [],
     "params": [],
     "body": {
@@ -31,7 +36,7 @@
       "form": [
         {
           "name": "title",
-          "value": "Task 4"
+          "value": "Task 45"
         },
         {
           "name": "description",
@@ -39,46 +44,61 @@
         }
       ]
     },
+    "auth": {
+      "type": "bearer",
+      "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRlc3QxIiwiaWF0IjoxNjU5ODAzNTY1LCJleHAiOjE2NTk4MDcxNjV9.acALQgBHMuAelNN4I-nnQQ5uUKvDIrSZgRme3WY0CtE",
+      "bearerPrefix": "Bearer "
+    },
     "tests": []
   },
   {
     "_id": "671e1e90-e790-478d-add0-a503f0558546",
     "colId": "1f1e8af7-3ba9-4dfc-b99f-d4ef35d4f389",
-    "containerId": "",
+    "containerId": "f801e786-4306-4af9-85f9-8203f55fcb23",
     "name": "Get Task by ID",
     "url": "http://localhost:3000/api/tasks/1",
     "method": "GET",
-    "sortNum": 30000,
+    "sortNum": 40000,
     "created": "2022-07-19T03:25:12.298Z",
-    "modified": "2022-07-19T05:59:02.090Z",
+    "modified": "2022-07-23T23:59:15.388Z",
     "headers": [],
     "params": [],
+    "auth": {
+      "type": "bearer",
+      "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRlc3QxIiwiaWF0IjoxNjU4NjIwNjk4LCJleHAiOjE2NTg2MjQyOTh9.KyWRwOoWZDky4WQOYHTiJymdAj_ctGL7VRvcrXAx8LU",
+      "bearerPrefix": "Bearer "
+    },
     "tests": []
   },
   {
     "_id": "78298858-bf39-4a2b-be16-f1c6c751c237",
     "colId": "1f1e8af7-3ba9-4dfc-b99f-d4ef35d4f389",
-    "containerId": "",
+    "containerId": "f801e786-4306-4af9-85f9-8203f55fcb23",
     "name": "Delete Task by ID",
-    "url": "http://localhost:3000/api/tasks/9176b7df-85f9-4920-9c45-e0c4e893af75",
+    "url": "http://localhost:3000/api/tasks/2",
     "method": "DELETE",
-    "sortNum": 40000,
+    "sortNum": 60000,
     "created": "2022-07-19T03:30:21.327Z",
-    "modified": "2022-07-19T03:34:01.933Z",
+    "modified": "2022-07-23T23:59:41.894Z",
     "headers": [],
     "params": [],
+    "auth": {
+      "type": "bearer",
+      "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRlc3QxIiwiaWF0IjoxNjU4NjIwNjk4LCJleHAiOjE2NTg2MjQyOTh9.KyWRwOoWZDky4WQOYHTiJymdAj_ctGL7VRvcrXAx8LU",
+      "bearerPrefix": "Bearer "
+    },
     "tests": []
   },
   {
     "_id": "4ab24714-a717-4cd8-8fb4-31da6683acbf",
     "colId": "1f1e8af7-3ba9-4dfc-b99f-d4ef35d4f389",
-    "containerId": "",
+    "containerId": "f801e786-4306-4af9-85f9-8203f55fcb23",
     "name": "Update Task by ID",
     "url": "http://localhost:3000/api/tasks/1/status",
     "method": "PATCH",
-    "sortNum": 35000,
+    "sortNum": 50000,
     "created": "2022-07-19T03:39:14.999Z",
-    "modified": "2022-07-19T06:41:40.724Z",
+    "modified": "2022-07-23T23:59:27.116Z",
     "headers": [],
     "params": [],
     "body": {
@@ -91,18 +111,23 @@
         }
       ]
     },
+    "auth": {
+      "type": "bearer",
+      "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRlc3QxIiwiaWF0IjoxNjU4NjIwNjk4LCJleHAiOjE2NTg2MjQyOTh9.KyWRwOoWZDky4WQOYHTiJymdAj_ctGL7VRvcrXAx8LU",
+      "bearerPrefix": "Bearer "
+    },
     "tests": []
   },
   {
     "_id": "bc763b35-044a-4425-8e57-edf90c731ec1",
     "colId": "1f1e8af7-3ba9-4dfc-b99f-d4ef35d4f389",
-    "containerId": "",
+    "containerId": "f801e786-4306-4af9-85f9-8203f55fcb23",
     "name": "Get Tasks By Filter",
     "url": "http://localhost:3000/api/tasks?status=OPEN",
     "method": "GET",
-    "sortNum": 15000,
+    "sortNum": 20000,
     "created": "2022-07-19T03:55:30.721Z",
-    "modified": "2022-07-19T06:41:30.502Z",
+    "modified": "2022-07-23T23:58:48.645Z",
     "headers": [],
     "params": [
       {
@@ -117,6 +142,67 @@
         "isPath": false
       }
     ],
+    "auth": {
+      "type": "bearer",
+      "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRlc3QxIiwiaWF0IjoxNjU4NjIwNjk4LCJleHAiOjE2NTg2MjQyOTh9.KyWRwOoWZDky4WQOYHTiJymdAj_ctGL7VRvcrXAx8LU",
+      "bearerPrefix": "Bearer "
+    },
+    "tests": []
+  },
+  {
+    "_id": "11616ce5-eaf9-4d9e-b203-f55fef75f376",
+    "colId": "1f1e8af7-3ba9-4dfc-b99f-d4ef35d4f389",
+    "containerId": "6bc88b3a-7a02-41b4-8a91-84226a45ec9b",
+    "name": "signUp",
+    "url": "http://localhost:3000/api/auth/signup",
+    "method": "POST",
+    "sortNum": 50000,
+    "created": "2022-07-23T21:50:44.387Z",
+    "modified": "2022-08-06T16:32:39.384Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "formencoded",
+      "raw": "",
+      "form": [
+        {
+          "name": "username",
+          "value": "test2"
+        },
+        {
+          "name": "password",
+          "value": "Admin123@"
+        }
+      ]
+    },
+    "tests": []
+  },
+  {
+    "_id": "4b9a3f0a-5d12-479d-a30a-fb6aea5aa2dc",
+    "colId": "1f1e8af7-3ba9-4dfc-b99f-d4ef35d4f389",
+    "containerId": "6bc88b3a-7a02-41b4-8a91-84226a45ec9b",
+    "name": "signIn",
+    "url": "http://localhost:3000/api/auth/signin",
+    "method": "POST",
+    "sortNum": 60000,
+    "created": "2022-07-23T22:56:20.408Z",
+    "modified": "2022-07-23T23:24:59.290Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "formencoded",
+      "raw": "",
+      "form": [
+        {
+          "name": "username",
+          "value": "test1"
+        },
+        {
+          "name": "password",
+          "value": "Admin123@"
+        }
+      ]
+    },
     "tests": []
   }
 ]

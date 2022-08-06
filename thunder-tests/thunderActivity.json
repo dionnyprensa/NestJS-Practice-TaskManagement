@@ -670,5 +670,28 @@
       ]
     },
     "tests": []
+  },
+  {
+    "_id": "1ed4c913-4404-426b-83e2-83af0e311b7f",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://localhost:3000/api/auth/ping",
+    "url": "http://localhost:3000/api/auth/ping",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2022-07-23T23:39:20.464Z",
+    "modified": "2022-07-23T23:45:12.053Z",
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "application/json"
+      },
+      {
+        "name": "Authorization",
+        "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRlc3QxIiwiaWF0IjoxNjU4NjE5NzQ0LCJleHAiOjE2NTg2MjMzNDR9.G65PN0WETLPAuu-9RuwnGrO9PFt3KY3cbhV_4G6U8RI"
+      }
+    ],
+    "params": [],
+    "tests": []
   }
 ]

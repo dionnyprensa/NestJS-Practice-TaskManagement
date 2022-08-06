@@ -4,6 +4,21 @@
     "colName": "task-management",
     "created": "2022-07-18T03:36:56.383Z",
     "sortNum": 10000,
-    "folders": []
+    "folders": [
+      {
+        "_id": "f801e786-4306-4af9-85f9-8203f55fcb23",
+        "name": "Tasks",
+        "containerId": "",
+        "created": "2022-07-23T21:50:24.856Z",
+        "sortNum": 10000
+      },
+      {
+        "_id": "6bc88b3a-7a02-41b4-8a91-84226a45ec9b",
+        "name": "auth",
+        "containerId": "",
+        "created": "2022-07-23T21:50:35.178Z",
+        "sortNum": 20000
+      }
+    ]
   }
 ]
