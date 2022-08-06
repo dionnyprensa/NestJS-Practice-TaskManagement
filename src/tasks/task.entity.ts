@@ -1,7 +1,7 @@
 import { Exclude } from "class-transformer";
-import { User } from "src/auth/user.entity";
+import { User } from "../auth/user.entity";
 import { Column, Entity, ManyToOne, PrimaryGeneratedColumn } from "typeorm";
-import { TaskStatus } from "./task-status.enum";
+import { TASK_STATUS } from "./task-status.enum";
 
 @Entity()
 export class Task {
@@ -15,7 +15,7 @@ export class Task {
   description: string;
 
   @Column()
-  status: TaskStatus;
+  status: TASK_STATUS;
 
   @ManyToOne(
     (_type) => User

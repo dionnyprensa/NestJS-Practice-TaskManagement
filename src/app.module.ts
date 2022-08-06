@@ -3,7 +3,7 @@ import { TypeOrmModule } from '@nestjs/typeorm';
 import { TasksModule } from './tasks/tasks.module';
 import { AuthModule } from './auth/auth.module';
 import { ConfigModule, ConfigService } from '@nestjs/config';
-import { configValidationSchema } from './config.schema';
+import { configValidationSchema, CONFIG_KEYS } from './config';
 
 @Module({
   imports: [
@@ -19,11 +19,11 @@ import { configValidationSchema } from './config.schema';
       inject: [ConfigService],
       useFactory: async (configService: ConfigService) => ({
         type: "postgres",
-        host: configService.get("DATABASE_HOST"),
-        port: configService.get("DATABASE_PORT"),
-        username: configService.get("DATABASE_USERNAME"),
-        password: configService.get("DATABASE_PASSWORD"),
-        database: configService.get("DATABASE_NAME"),
+        host: configService.get(CONFIG_KEYS.DATABASE_HOST),
+        port: configService.get(CONFIG_KEYS.DATABASE_PORT),
+        username: configService.get(CONFIG_KEYS.DATABASE_USERNAME),
+        password: configService.get(CONFIG_KEYS.DATABASE_PASSWORD),
+        database: configService.get(CONFIG_KEYS.DATABASE_NAME),
         autoLoadEntities: true,
         synchronize: true,
       })

@@ -1,7 +1,9 @@
 import { Injectable, UnauthorizedException } from "@nestjs/common";
+import { ConfigService } from "@nestjs/config";
 import { PassportStrategy } from "@nestjs/passport";
 import { InjectRepository } from "@nestjs/typeorm";
 import { ExtractJwt, Strategy } from "passport-jwt";
+import { CONFIG_KEYS } from "../config";
 import { Repository } from "typeorm";
 import { JwtPayload } from "./interfaces/jwt-payload.interface";
 import { User } from "./user.entity";
@@ -10,10 +12,11 @@ import { User } from "./user.entity";
 export class JwtStrategy extends PassportStrategy(Strategy) {
   constructor(
     @InjectRepository(User)
-    private readonly usersRepository: Repository<User>
+    private readonly usersRepository: Repository<User>,
+    private readonly configService: ConfigService
   ) {
     super({
-      secretOrKey: 'iloveeat',
+      secretOrKey: configService.get(CONFIG_KEYS.JWT_SECRET_KEY),
       jwtFromRequest: ExtractJwt.fromAuthHeaderAsBearerToken()
     });
   }

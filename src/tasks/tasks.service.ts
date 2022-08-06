@@ -2,13 +2,13 @@ import { Injectable, InternalServerErrorException, Logger, NotFoundException } f
 import { Repository } from 'typeorm';
 import { InjectRepository } from '@nestjs/typeorm';
 
-import { TaskStatus } from './task-status.enum';
+import { TASK_STATUS } from './task-status.enum';
 import { Task } from './task.entity';
 
 import { GetTasksFilterDTO } from './dtos/get-tasks-filter.dto';
 import { CreateTaskDTO } from './dtos/create-task.dto';
 import { UpdateTaskStatusDTO } from './dtos/update-task-status';
-import { User } from 'src/auth/user.entity';
+import { User } from '../auth/user.entity';
 
 @Injectable()
 export class TasksService {
@@ -70,7 +70,7 @@ export class TasksService {
     const _task: Task = await this.tasksRepository.create({
       title,
       description,
-      status: TaskStatus.OPEN,
+      status: TASK_STATUS.OPEN,
       user
     });
 

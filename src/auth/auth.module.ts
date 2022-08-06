@@ -6,15 +6,22 @@ import { User } from './user.entity';
 import { PassportModule } from '@nestjs/passport';
 import { JwtModule } from '@nestjs/jwt';
 import { JwtStrategy } from './jwt.strategy';
+import { ConfigModule, ConfigService } from '@nestjs/config';
+import { CONFIG_KEYS } from '../config';
 
 @Module({
   imports: [
+    ConfigModule,
     PassportModule.register({ defaultStrategy: 'jwt' }),
-    JwtModule.register({
-      secret: 'iloveeat',
-      signOptions: {
-        expiresIn: 3600
-      }
+    JwtModule.registerAsync({
+      imports: [ConfigModule],
+      inject: [ConfigService],
+      useFactory: (configService: ConfigService) => ({
+        secret: configService.get(CONFIG_KEYS.JWT_SECRET_KEY),
+        signOptions: {
+          expiresIn: 3600
+        }
+      })
     }),
     TypeOrmModule.forFeature(
       [User]
