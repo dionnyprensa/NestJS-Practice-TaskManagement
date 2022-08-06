@@ -8,6 +8,6 @@ export class TasksRepository extends Repository<Task> {
   //   @InjectRepository(Task)
   //   private readonly tasksRepository: Repository<Task>
   // ) {
-  //   // super();
+  //   super(Task, );
   // }
 }
