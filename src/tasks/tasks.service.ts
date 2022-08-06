@@ -17,10 +17,11 @@ export class TasksService {
     private readonly tasksRepository: Repository<Task>
   ) { }
 
-  async getTasks(tasksFilterDTO: GetTasksFilterDTO): Promise<Task[]> {
+  async getTasks(tasksFilterDTO: GetTasksFilterDTO, user: User): Promise<Task[]> {
     const { status, search } = tasksFilterDTO
     const query = this.tasksRepository.createQueryBuilder('task')
 
+    query.andWhere({ user });
 
     if (status) {
       query.andWhere('task.status = :status', { status })
@@ -28,17 +29,24 @@ export class TasksService {
 
     if (search) {
       query.andWhere(
-        'LOWER(task.title) LIKE LOWER(:search) OR LOWER(task.description) LIKE LOWER(:search)'
+        '(LOWER(task.title) LIKE LOWER(:search) OR LOWER(task.description) LIKE LOWER(:search))'
         , { search: `%${search}%` }
       )
     }
 
-    return await query.getMany();
+    const tasks = await query.getMany();
+
+    return tasks
   }
 
-  async getByID(id: string): Promise<Task> {
-    const _task: Task = await this.tasksRepository.findOneBy({
-      id,
+  async getByID(id: string, user: User): Promise<Task> {
+    // const _task: Task = await this.tasksRepository.findOneBy({
+    //   id,
+    // });
+    const _task: Task = await this.tasksRepository.findOne({
+      where: {
+        id, user
+      }
     });
 
     if (!_task) throw new NotFoundException(`Task with the ID ${id} not found`);
@@ -60,15 +68,19 @@ export class TasksService {
     return await this.tasksRepository.save(_task);
   }
 
-  async deleteByID(id: string): Promise<void> {
-    const result = await this.tasksRepository.delete(id);
+  async deleteByID(id: string, user: User): Promise<void> {
+    // const _task = await this.getByID(id, user);
+
+    // if (!_task) throw new NotFoundException(`Task with the ID ${id} not found`);
+
+    const result = await this.tasksRepository.delete({ id, user });
 
     if (result.affected === 0) throw new NotFoundException(`Task with the ID ${id} not found`);
   }
 
-  async updateByID(id: string, updateTaskStatusDTO: UpdateTaskStatusDTO): Promise<Task> {
+  async updateByID(id: string, updateTaskStatusDTO: UpdateTaskStatusDTO, user: User): Promise<Task> {
 
-    const _task = await this.getByID(id);
+    const _task = await this.getByID(id, user);
 
     _task.status = updateTaskStatusDTO.status;
 
